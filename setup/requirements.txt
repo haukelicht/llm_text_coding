@@ -1,0 +1,13 @@
+pandas==2.2.0
+numpy==1.26.4
+scipy==1.12.0
+matplotlib==3.8.2
+seaborn==0.13.2
+openai==1.12.0
+scikit-learn==1.4.0
+scikit-llm==1.0.0
+nltk==3.8.1
+stanza==1.7.0
+nbformat==5.9.2
+ipykernel==6.29.2
+ipywidgets==8.1.2
