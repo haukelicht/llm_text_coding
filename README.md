@@ -20,7 +20,7 @@ Create a new API key by clicking on the "Create new secret key" button.
 
 Fill your information in the form show below ... 
 
-![Pop-up for creating a new API key](assets/openai_api_create_new_secret.png)
+<img src="assets/openai_api_create_new_secret.png" alt="Pop-up for creating a new OpenAI API key" style="width:200px;"/>
 
 ... and click on the "Create secrete "  button.
 
@@ -34,7 +34,7 @@ Create a file called `.env` in the root of your project folder.
 
 Open it in a text editor and
 
-1. add `OPENAI_KEY=` in the first line of the file, 
+1. add `OPENAI_API_KEY=` in the first line of the file, 
 2. copy your API key from your browser window,
 3. paste the key it in your `.env` file behind the `=`
 4. save the file and close it
@@ -42,5 +42,5 @@ Open it in a text editor and
 **_Alternatively_** &emdash; Directly create the .env file like this:
 
 ```bash
-echo "OPENAI_KEY=<insert your key here>" > .env
+echo "OPENAI_API_KEY=<insert your key here>" > .env
 ```
