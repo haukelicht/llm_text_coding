@@ -12,9 +12,12 @@ This repository contains the materials for the workshop "Hands-On Text Coding wi
 We will be using Visual Studio Code (VS Code) as a code editor in the workshop.
 Please install **VS Code** before from https://code.visualstudio.com/Download.
 
-You will also need to install **Python**, if you have not done so before. You can download and install it as described here: https://www.python.org/downloads/
+You will also need to install **Python**, if you have not done so before. 
+You can download and install it as described here: https://www.python.org/downloads.
 
-In VS code, you also need to install the Python and Jupyter **extensions**.
+Next, you need to install the `conda` package manager as described here: https://conda.io/projects/conda/en/latest/user-guide/install.
+
+Finally, in VS code, you also need to install the Python and Jupyter **extensions**.
 You can do this by clicking on the "Extensions" icon in the left-hand sidebar, searching for "Python" ("Jupyter") and clicking on the "Install" button.
 
 You shouldn't run into any issues if you have admin rights on your computer.
@@ -24,15 +27,28 @@ If you don't find a solution, you can also email me at `hauke.licht [at] wiso [d
 
 ### Conda environment
 
-To ensure that everyone has the same python setup and packages installed, we will use a [conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
+To ensure that everyone uses the same python and packages versions, we will create and use a virtual conda environment.
 
 ```bash
 conda create -n llm_text_annotation -y python=3.11 pip
+conda activate llm_text_annotation
 conda install notebook
 pip install -r setup/requirements.txt
 ```
 
-**_Alternatively_**
+When running some python script or a cell in a Jupyter notebook in VS Code, you will be prompted to select the python interpreter.
+
+<img src="assets/vscode_python_environments_popup.png" alt="Pop-up in VS Code for selecting a python interpreter" style="width:400px;"/>
+
+In our case, we will always select the `llm_text_annotation` environment:
+
+<img src="assets/vscode_select_python_environment.png" alt="Virtual environment to select as python interpreter" style="width:400px;"/>
+
+<br>
+
+
+
+**_Alternatives_** 
 
 - create a native python virtual environment (like [this](https://realpython.com/lessons/creating-virtual-environment/)), and/or
 - install the required python packages listed the [requirements.txt](setup/requirements.txt) file manually
