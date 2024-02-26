@@ -33,7 +33,7 @@ To ensure that everyone uses the same python and packages versions, we will crea
 conda create -n llm_text_annotation -y python=3.11 pip
 conda activate llm_text_annotation
 conda install notebook
-pip install -r setup/requirements.txt
+pip install -r https://raw.githubusercontent.com/haukelicht/llm_text_coding/main/setup/requirements.txt
 ```
 
 When running some python script or a cell in a Jupyter notebook in VS Code, you will be prompted to select the python interpreter.
