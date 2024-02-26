@@ -59,7 +59,13 @@ In our case, we will always select the `llm_text_annotation` environment:
 
 Go to [OpenAI](https://beta.openai.com/signup/) and create an account.
 
-#### 2. Get your API key
+#### 2. Link a payment method and book some credit
+
+1. go to platform.openai.com/account/billing/overview
+2. link a valid credit card
+3. click "Add to credit balance" and load a credit of, e.g., 10 dollars
+
+#### 3. Get your API key
 
 Go to the [API keys](https://platform.openai.com/api-keys) page.
 
@@ -75,7 +81,8 @@ Fill your information in the form show below ...
 This will be the only time you will be able to see your API key. 
 Make sure you **take the next** step described below to store it in a safe place.
 
-#### 3. Make your API key accessible in python
+
+#### 4. Make your API key accessible in python
 
 Create a file called `.env` in the root of your project folder.
 
@@ -92,9 +99,9 @@ Open it in a text editor and
 echo "OPENAI_API_KEY=<insert your key here>" > .env
 ```
 
-#### 4. Verify that your API key is accessible in python
+#### 5. Verify that your API key is accessible in python
 
-Run the code in notebook [test_openai_key.ipynb].(./code/test_openai_key.ipynb) to verify that your API key is accessible in python.
+Run the code in notebook [test_openai_key.ipynb](./code/test_openai_key.ipynb) to verify that your API key is accessible in python.
 
 ## Questions and issues
 

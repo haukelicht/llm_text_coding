@@ -1,4 +1,7 @@
 .DS_Store
 .env
 
+todos.md
+notes/
+slides/
 code/sandbox.ipynb
