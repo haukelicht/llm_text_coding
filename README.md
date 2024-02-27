@@ -2,7 +2,7 @@
 
 | Authors | Last update |
 |:------ |:----------- |
-| Hauke Licht (https://github.com/haukelicht) | 2024-02-14 |
+| Hauke Licht (https://github.com/haukelicht) | 2024-02-27 |
 
 This repository contains the materials for the workshop "Hands-On Text Coding with Large Language Models for Social Scientists."
 
@@ -28,6 +28,12 @@ If you don't find a solution, you can also email me at `hauke.licht [at] wiso [d
 ### Conda environment
 
 To ensure that everyone uses the same python and packages versions, we will create and use a virtual conda environment.
+For this, you'll need to open 
+
+- the *Anaconda Prompt* app if you are a Windows user, **_or_**
+- the *Terminal* app if you are a Mac user
+
+In the Anaconda Prompt/Terminal, execute the following lines (by copy-pasting them there and pressing Enter):
 
 ```bash
 conda create -n llm_text_annotation -y python=3.11 pip
