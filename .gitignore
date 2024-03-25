@@ -1,7 +1,18 @@
+*.Rproj
 .DS_Store
+.Rprofile
+.Renviron
+.Rhistory
 .env
 
 todos.md
 notes/
 slides/
 code/sandbox.ipynb
+code/*/sandbox.ipynb
+*/**/xx_deprecated/
+code/*.Rmd
+code/**/*.Rmd
+.Rproj.user
+renv/
+renv.lock
